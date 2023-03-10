@@ -77,3 +77,64 @@
     font-size: 50px;
 
 }
+
+
+
+       .container-app{
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        background-color: rgb(212, 212, 212);
+        border-radius: 5px;
+       } 
+       .app-screen{
+        display: flex;
+        flex-direction: row;
+       }
+       .btns{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+       }
+       #result{
+        text-align: center;
+        color: white;
+       }
+       .input{
+        margin: 5px ;
+        outline: none;
+        display: inline-block;
+        width: 80px;
+        font-size: 10px;
+        text-align: center;
+        font-family: 'Nanum Gothic Coding', monospace;
+       }
+       .btn{
+        display: block;
+        width: 100px;
+        height: 40px;
+        cursor: pointer;
+        border-radius: 8px;
+        font-family: 'Nanum Gothic Coding', monospace;
+       }
+       .calculet:hover{
+        transition: 1s;
+        box-shadow: 0 0 15px 0 #ffd000
+       }
+       .calculet{
+        background-color: #fcf94f;
+        border: 2px solid #ffd000;
+       }
+       .reset:hover{
+        transition: 1s;
+        box-shadow: 0 0 15px 0 #ffbb00;
+       }
+       .reset{
+        background-color: #ff3d37;
+        border: 2px solid #fcca41;
+       }
