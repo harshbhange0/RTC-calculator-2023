@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="./style.css">
+     <script src="./calculater.js"></script>
     <title>Calculator</title>
 </head>
 <body>
@@ -13,39 +14,39 @@
 
         <div class="main-cal-screen-container">
 
-            <input type="text" class="cal-screen">
-
+            <input type="text" class="cal-screen ans" id="ansScreen">
+            <input type="text" class="cal-screen opretion" id="inputScreen">
+ 
         </div>
         <div class="main-cal-keypad-container">
 
             <div class="row 1st">
-                <div class="key-pad"><button class="key spe-key">AC</button></div>
-                <div class="key-pad"><button class="key spe-key"><sup>+</sup>/<sub>-</sub></button></div>
-                <div class="key-pad"><button class="key spe-key">%</button></div>
-                <div class="key-pad"><button class="key fuction-key">&divide;</button></div>
+                <div class="key-pad"><button class="key spe-key ac-key" onclick="allClear()">AC</button></div>
+                <div class="key-pad"><button class="key spe-key"onclick="addInput('%')">%</button></div>
+                <div class="key-pad"><button class="key fuction-key" onclick="addInput('/')">/</button></div>
             </div>
             <div class="row 2nd">
-                <div class="key-pad"><button class="key">7</button></div>
-                <div class="key-pad"><button class="key">8</button></div>
-                <div class="key-pad"><button class="key">9</button></div>
-                <div class="key-pad"><button class="key fuction-key">&times;</button></div>
+                <div class="key-pad"><button class="key" onclick="addInput(7)">7</button></div>
+                <div class="key-pad"><button class="key" onclick="addInput(8)">8</button></div>
+                <div class="key-pad"><button class="key" onclick="addInput(9)">9</button></div>
+                <div class="key-pad"><button class="key fuction-key" onclick="addInput('*')">*</button></div>
             </div>
             <div class="row">
-                <div class="key-pad"><button class="key">4</button></div>
-                <div class="key-pad"><button class="key">5</button></div>
-                <div class="key-pad"><button class="key">6</button></div>
-                <div class="key-pad"><button class="key fuction-key">-</button></div>
+                <div class="key-pad"><button class="key" onclick="addInput(4)">4</button></div>
+                <div class="key-pad"><button class="key" onclick="addInput(5)">5</button></div>
+                <div class="key-pad"><button class="key" onclick="addInput(6)">6</button></div>
+                <div class="key-pad"><button class="key fuction-key" onclick="addInput('-')">-</button></div>
             </div>
             <div class="row">
-                <div class="key-pad"><button class="key">1</button></div>
-                <div class="key-pad"><button class="key">2</button></div>
-                <div class="key-pad"><button class="key">3</button></div>
-                <div class="key-pad"><button class="key fuction-key">+</button></div>
+                <div class="key-pad"><button class="key" onclick="addInput(1)">1</button></div>
+                <div class="key-pad"><button class="key" onclick="addInput(2)">2</button></div>
+                <div class="key-pad"><button class="key" onclick="addInput(3)">3</button></div>
+                <div class="key-pad"><button class="key fuction-key" onclick="addInput('+')">+</button></div>
             </div>
             <div class="row">
-                <div class="key-pad"><button class="key zero-key">0</button></div>
-                <div class="key-pad"><button class="key">.</button></div>
-                <div class="key-pad"><button class="key fuction-key">=</button></div>
+                <div class="key-pad"><button class="key zero-key" onclick="addInput('0')">0</button></div>
+                <div class="key-pad"><button class="key" onclick="addInput('.')">.</button></div>
+                <div class="key-pad"><button class="key fuction-key" onclick="calNumber()">=</button></div>
             </div>
 
 
